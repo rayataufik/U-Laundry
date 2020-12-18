@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Dashboard - Admin</title>
+
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.css">
+	<!-- Style CSS (White)-->
+	<link rel="stylesheet" href="assets/css/White.css">
+	<!-- Style CSS (Dark)-->
+	<link rel="stylesheet" href="assets/css/Dark.css">
+	<!-- FontAwesome CSS-->
+	<link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css">
+	<!-- Icon LineAwesome CSS-->
+	<link rel="stylesheet" href="assets/vendors/lineawesome/css/line-awesome.min.css">
+
+</head>
+
+<body>
+
+	<!--Topbar -->
+	<div class="topbar transition">
+		<div class="bars">
+			<button type="button" class="btn transition" id="sidebar-toggle">
+				<i class="las la-bars"></i>
+			</button>
+		</div>
+		<div class="menu">
+			<ul>
+				<li>
+					<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="checkbox">
+							<input type="checkbox" id="checkbox" title="Dark Or White" />
+							<div class="slider round"></div>
+						</label>
+					</div>
+				</li>
+
+				<li>
+					<div class="dropdown">
+						<div class="dropdown-toggle" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false">
+							<img src="assets/images/avatar/avatar-2.png" alt="Profile">
+						</div>
+						<div class="dropdown-menu" aria-labelledby="dropdownProfile">
+							<a class="dropdown-item" href="../index.html">
+								<i class="las la-sign-out-alt mr-2"></i> Sign Out
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--Sidebar-->
+	<div class="sidebar transition overlay-scrollbars">
+		<div class="logo">
+			<h2 style="font-weight: 700;" class="mb-0">U-<span style="font-weight: 500;"></span>laundry</span></h2>
+		</div>
+
+		<div class="sidebar-items">
+			<div class="accordion" id="sidebar-items">
+				<ul>
+					<p class="menu">Apps</p>
+					<li>
+						<a href="index.html" class="items">
+							<i class="fa fa-tachometer-alt"></i>
+							<span>Dashoard</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="sidebar-overlay"></div>
+
+
+	<!--Content Start-->
+	<div class="content transition">
+		<div class="container-fluid dashboard">
+			<h3>Dashboard</h3>
+
+			<div class="row">
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="las la-inbox icon-home bg-primary text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>Pelanggan</p>
+									<h5>100</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="las la-clipboard-list icon-home bg-success text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>Karyawan</p>
+									<h5>3</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="las la-chart-bar  icon-home bg-info text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>New Order</p>
+									<h5>10</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4 d-flex align-items-center">
+									<i class="las la-id-card  icon-home bg-warning text-light"></i>
+								</div>
+								<div class="col-8">
+									<p>Total Order</p>
+									<h5>256</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="card">
+						<div class="row">
+							<div class="col-md-10"><span>
+									<h5 class="card-header">Pelanggan</h5>
+								</span></div>
+							<div class="col-md-2 mt-3"><span><a href="#" class="btn btn-primary ">Tambah Pelanggan</a></span>
+							</div>
+						</div>
+
+						<div class="card-body">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Nama</th>
+										<th scope="col">Service</th>
+										<th scope="col">Status</th>
+										<th scope="col">Opsi</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">2365</th>
+										<td>Mark</td>
+										<td>Basic</td>
+										<td>Dalam Pengerjaan</td>
+										<td>
+											<span class="badge badge-info">Update</span>
+											<span class="badge badge-danger">Hapus</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2235</th>
+										<td>Jacob</td>
+										<td>Reguler</td>
+										<td>Siap Diambil</td>
+										<td>
+											<span class="badge badge-info">Update</span>
+											<span class="badge badge-danger">Hapus</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2565</th>
+										<td>Larry</td>
+										<td>Premium</td>
+										<td>Belum Diterima</td>
+										<td>
+											<span class="badge badge-info">Update</span>
+											<span class="badge badge-danger">Hapus</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="footer transition">
+		<hr>
+		<p>
+			&copy; 2020 All Right Reserved by <a href="#" target="_blank">U-Laundry</a>
+		</p>
+	</div>
+
+	<!-- Loader -->
+	<!-- <div class="loader">
+		<div class="spinner-border text-light" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+
+	<div class="loader-overlay"></div> -->
+
+	<!-- Library Javascipt-->
+	<script src="assets/vendors/bootstrap/js/jquery.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/popper.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>
