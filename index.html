@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U-Laundry</title>
+
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+  <!-- Costum css -->
+  <link rel="stylesheet" href="/assets/css/u-laundry.css">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">U-Laundry</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <!-- <form class="form-inline"> -->
+          <input class="form-control mr-sm-2" type="search" placeholder="Cek Satus" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="tooltip"
+            data-placement="bottom" title="Masukan Id Order kamu disini" Tooltip on bottom
+            onclick="location.href = 'status.html';">Search</button>
+          <!-- </form> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">U-Laundry</h1>
+      <p class="lead">The best laundry service in your area, fresh Approach to Your.
+        Daily Washing</p>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+
+  <!-- Features -->
+  <div class="container">
+    <div class="f-title" id="pricing">PRICES & PLANS</div>
+    <hr class="my-2 hr-clr">
+    <div class="price-list">
+      <div class="row">
+        <div class="col-md-4 my-3">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Basic</h5>
+              <p class="card-text">6.000 / Kg</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">2 jeans</li>
+              <li class="list-group-item">4 T-shirts</li>
+              <li class="list-group-item">1 shirt & top</li>
+              <li class="list-group-item">3 shorts</li>
+              <li class="list-group-item">More ...</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#basicModal">Order now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 my-3">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Regular</h5>
+              <p class="card-text">10.000 / Kg</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">2 jeans</li>
+              <li class="list-group-item">4 T-shirts</li>
+              <li class="list-group-item">1 shirt & top</li>
+              <li class="list-group-item">3 shorts</li>
+              <li class="list-group-item">More ...</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#regulerModal">Order now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 my-3">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Premium</h5>
+              <p class="card-text">14.000 / Kg</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">2 jeans</li>
+              <li class="list-group-item">4 T-shirts</li>
+              <li class="list-group-item">1 shirt & top</li>
+              <li class="list-group-item">3 shorts</li>
+              <li class="list-group-item">More ...</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#premiumModal">Order now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Features -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="premiumModal" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+    tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="whatsapp-form">
+            <div class="hide">
+              <label>Order ID :<h5 id="wa_orderid"></h5></label>
+            </div>
+            <div class="form-group">
+              <label>Nama</label>
+              <input class="validate form-control" id="wa_name" name="name" required="" type="text" value='' />
+            </div>
+            <div class="form-group">
+              <label>Nomor Hp</label>
+              <input class="validate form-control" id="wa_number" name="count" required="" type="number" value='' />
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="wa_select">
+                <option hidden='hidden' selected='selected' value='default'>Pilih Service</option>
+                <option value="Basic">Basic</option>
+                <option value="Regular">Regular</option>
+                <option value="Premium">Premium</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Alamat</label>
+              <textarea class="form-control" id='wa_textarea' placeholder='' maxlength='5000' row='1'
+                required=""></textarea>
+            </div>
+            <div class="text-danger mb-2" id="text-info"></div>
+            <a class="send_form btn btn-primary" href="javascript:void" type="submit">Order now</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-copyright text-center py-3">© 2020 U-Laundry. All Rights Reserved.</div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- javascript -->
+
+  <script src="/assets/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/u-laundry.js"></script>
+
+  <script>
+    document.getElementById("wa_orderid").innerHTML = Math.ceil(Math.random() * 10000);
+  </script>
+
+  <!-- javascript -->
+</body>
+
+</html>

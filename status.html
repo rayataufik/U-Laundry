@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U-Laundry</title>
+
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+  <!-- Costum css -->
+  <link rel="stylesheet" href="/assets/css/u-laundry.css">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">U-Laundry</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Pricing</a>
+          </li>
+          <!-- <form class="form-inline"> -->
+          <input class="form-control mr-sm-2" type="search" placeholder="Cek Satus" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="tooltip"
+            data-placement="bottom" title="Masukan Id Order kamu disini" Tooltip on bottom
+            onclick="location.href = 'status.html';">Search</button>
+          <!-- </form> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <div class="container">
+    <div class="status mt-5 mb-5">
+      <h2>Status laundry Kamu</h2>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id Order</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Service</th>
+          <th scope="col">Tanggal Diterima</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#2365</td>
+          <td>Wahyu</td>
+          <td>Basic</td>
+          <td>14-12-2020</td>
+          <td>Siap Diambil</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- javascript -->
+
+  <script src="/assets/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/u-laundry.js"></script>
+
+  <!-- javascript -->
+</body>
+
+</html>
